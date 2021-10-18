@@ -1,5 +1,5 @@
 # de-id
-Perl and Python code for de-identifying electronic medical records
+Perl and Python code for de-identifying electronic medical records of the category age
 # Prerequisites
 ## Python
 * Python 3.5.2
@@ -10,19 +10,20 @@ Perl and Python code for de-identifying electronic medical records
 ### De-identification
 1- Change to the python directory
 
-2- run ```python deid.py id.text phone.phi```
+2- run ```python3 deid-Etienne-Nichole.py id.text age-Etienne-Nichole.phi    
+```
 
 In which:
 
 * ```id.text``` contains Patient Notes.
-* ```phone.phi``` is the output file that will be created.
+* ```age-Etienne-Nichole.phi``` is the output file that will be created.
 ### Stats
 1- change to the python directory
 
-2- run ```python stats.py id.deid id-phi.phrase phone.phi ```
+2- run ```python3 stats-Etienne-Nichole.py id.deid id-phi.phrase age-Etienne-Nichole.phi ```
 
 In which:
 
 * ```id.deid``` is the gold standard that is category-blind.
 * ```id-phi.phrase``` is the gold standard with the categories included.
-* ```phone.phi``` is the test file that the stats is run on.
+* ```age-Etienne-Nichole.phi``` is the test file that the stats is run on.
